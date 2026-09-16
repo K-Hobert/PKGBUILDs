@@ -1,0 +1,26 @@
+From 1baa36a0f1ae616833fb8356d64adddcf058cd17 Mon Sep 17 00:00:00 2001
+From: 1Naim <dnaim@cachyos.org>
+Subject: [PATCH] Kconfig: Add CONFIG_CACHY
+
+This will be used later on for the tweaks made to kernel.
+
+Signed-off-by: Eric Naim <dnaim@cachyos.org>
+---
+ init/Kconfig | 4 ++++
+ 1 file changed, 4 insertions(+)
+
+diff --git a/init/Kconfig b/init/Kconfig
+index ... ..
+--- a/init/Kconfig
++++ b/init/Kconfig
+@@ -215,6 +215,10 @@ config THREAD_INFO_IN_TASK
+ 
+ menu "General setup"
+ 
++config CACHY
++	bool "Kernel tweaks by CachyOS"
++	default y
++
+ config BROKEN
+ 	bool
+ 	default n
