@@ -17,6 +17,7 @@ _commit_id=asahi-${_rcver}${_rcrel+-rc}${_rcrel}-${_asahirel}
 _srcname=linux-${_commit_id}
 _kernelname=${pkgbase#linux}
 _desc="AArch64 Apple Silicon (M1 development kernel)"
+provides=(V4L2LOOPBACK-MODULE ADIOS-MODULE NTSYNC-MODULE)
 pkgver="${_rcver}${_rcrel:+rc}${_rcrel}.asahi${_asahirel}"
 arch=('aarch64')
 url="http://www.kernel.org/"
@@ -39,14 +40,11 @@ xz
 xmlto
 python
 )
-
 options=('!strip')
 
 source=(
 https://github.com/AsahiLinux/linux/archive/${_commit_id}.tar.gz
 config
-#CachyOS patches
-
 )
 
 sha256sums=('874ef68d04ac8c831b90bb01a387cfabb58fceb60842c49a0d0e58bcd6c146ad'
