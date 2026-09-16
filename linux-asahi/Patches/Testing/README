@@ -1,1 +1,10 @@
 No issues so far.
+
+From here
+https://github.com/sirlucjan/kernel-patches/
+0001-arch-patches.patch
+0001-aufs-7.1-merge-v20260713.patch
+0001-bbr3-cachyos-patches.patch
+0001-iosched-7.1-introduce-ADIOS-I-O-scheduler.patch
+0001-zstd-7.1-merge-v1.6.0-into-kernel-tree.patch
+0001-media-v4l2-core-add-v4l2loopback-driver.patch
